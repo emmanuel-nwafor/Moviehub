@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #222222;
+  background-image: linear-gradient( #222222 100%, #303030 100%, #828282 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
+}
+
+.mainDiv {
+  background-image: url('images.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.mainDiv .div1{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+.mainDiv .div1 h1{
+    background: -webkit-linear-gradient(navajowhite, darkslategrey, antiquewhite);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px
+}
+.mainDiv .div1 span{
+  height: 40px;
+  width: 120px;
+  background: #03856FFA;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: ghostwhite;
+}
+.mainDiv .div1 span p{
+  margin: 5px;
+  color: navajowhite;
+}
+.mainDiv .div1 span i{
+  background: white;
+  border-radius: 100px;
+  font-size: 25px;
+  color: darkslategray
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+#searchInput{
+  height: 50px;
+  min-width: 280px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: 0;
+  background: #0003259E;
+  outline: none;
+  color: lightgray;
+}
+#searchButton{
+  background-color: transparent;
+  border: 0;
+  height: 50px;
+}
+#searchButton i {
+  color: gray;
+  font-size: 45px;
+  background: #0003259E;
+  padding: 5px; 
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+::placeholder{
+  padding: 10px;
+  color: lightgray;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #00032557;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card h3 {
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.card p {
+  padding: 0 10px 10px;
+  font-size: 14px;
+  color: lightgrey;
+}
+
+.download-btn {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #222222;
+  background-image: linear-gradient( #222222 0%, #303030 10%, #828282 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.download-btn:hover {
+  background-color: #218838;
+}
+
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+}
+.div2 h2{
+  color: darkslategray;
+}
+.div3{
+ /* margin: 40px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div3 div {
+  display: flex;
+  margin-top: 20px;
+  overflow: auto;
+}
+.div3 div img {
+  margin: 9px;
+  border-radius: 20px;
+  width: 250px;
+  height: 300px
+}
+.div3 div img:hover{
+  
+  transition: .2s
+}
+.div3 h2{
+  color: darkslategray;
+  margin: 40px;
+}
+.div2 p {
+  color: navajowhite;
+}
+#BKT{
+  text-decoration: none;
+  color: slategrey;
+  margin: 40px;
+  position: fixed;
+}
+#BKT i{
+  font-size: 50px
+}
+.partners{
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+}
+.partners img{
+  height: 70px;
+  width: 70px;
+  border-radius: 1000px;
+  margin: 10px
+}
+footer{
+  display: flex;
+  height: 40vh;
+  background: #535353;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer h1 {
+  color: gray;
+  font-size: 26px
+}
+footer div {
+  margin: 5px;
+}
+footer div p {
+  color: peachpuff
+}
+footer div p:hover{
+  text-decoration: underline;
+}
+#copy{
+  text-align: center;
+  color: silver;
+  background: #535353
+}
